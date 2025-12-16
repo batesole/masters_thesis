@@ -1,6 +1,6 @@
 # Master's Thesis Repository of A. Batesole
 
-**As of 9 December 2025 this repository is still under construction.**
+**As of 16 December 2025 this repository is still under construction.**
 
 This is the public repository of the work related to my master's thesis.  The main work of the thesis was to replace using a single, static activation function throughout a network with a linear weighted blend of functions, called an Adaptive Blending Unit (ABU). 
 
@@ -77,6 +77,6 @@ alpha_analysis.py does some analysis of the saved alpha values from resnet_ABU.p
 After reading in all the alpha .csv files, analysis is done based on the final alpha values per function and per layer.  Plots of the final alphas per function and scatterplots of the final alphas per layer are saved in the current directory as .png files.  Summary statistics are also done but are only saved to a variable.
 
 ## Alpha Analysis Figures
-Each run saves the resulting alpha weights from the blended functions.  These will be uploaded elsewhere and a link included here for anyone curious to see the resulting blended function weights.
+Each run from resnet_ABU.py saves the resulting alpha weights from the blended functions.  Results include alpha per layer of each function, alpha per function of each layer, and model accuracy.  Results are stored first by experiment (labeled by function pool), then by run number. 
 
-These will be the results from all runs of the various alpha figures.  Results include alpha per layer of each function, alpha per function of each layer, and final functions of each layer.  Results are stored first by function pool, then by run number. 
+Some examples will be uploaded here, along with some basic analysis of the alpha values, including the final resulting function per layer, and plots of the alpha weights.
